@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-rows: 6fr 1fr 0.5fr; /* Top part occupies more space */
+            grid-template-columns: 1fr;
+        }
+
+        .top {
+            background-color: rgb(52, 112, 22);
+            padding: 20px;
+            display: flex;
+            align-items: center; /* Center content vertically */
+        }
+
+        .middle {
+            background-color: rgb(218, 98, 0);
+            padding: 20px;
+        }
+
+        .bottom {
+            background-color: rgb(52, 112, 22);
+        }
+
+        h4 {
+            text-align: center;
+            font-size: 15px;
+            font-weight: lighter;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-weight: bolder;
+            margin-left: 50px; 
+            margin-right: 300px; 
+        }
+
+        p {
+            margin: 50px; 
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="top">
+        <img src="images/my-birth.jpg" alt="my-birth" style="width:500px;height:auto;object-fit:cover;padding: 50px;"/>
+        <div>
+            <h1>"My Birth" (1932)</h1>
+            <p>This surreal painting depicts Kahlo's birth, with her adult head emerging from her mother's birth canal. The scene is surrounded by various symbolic elements, including medical instruments, indigenous imagery, and pre-Columbian idols. The painting reflects Kahlo's fascination with birth, life, and death, as well as her exploration of fertility, femininity, and mortality.</p>
+        </div>
+    </div>
+
+    <div class="middle">
+        <a href="index.html"><h2>←</h2></a>
+    </div>
+
+    <div class="bottom">
+        <h4>Site by Qinzhi.</h4>
+    </div>
+</div>
+
+</body>
+</html>

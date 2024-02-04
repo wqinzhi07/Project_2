@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-rows: 8fr 1fr 0.5fr; /* Top part occupies more space */
+            grid-template-columns: 1fr;
+        }
+
+        .top {
+            background-color: rgb(52, 112, 22);
+            padding: 20px;
+            display: flex;
+            align-items: center; /* Center content vertically */
+        }
+
+        .middle {
+            background-color: rgb(218, 98, 0);
+            padding: 20px;
+        }
+
+        .bottom {
+            background-color: rgb(52, 112, 22);
+        }
+
+        h4 {
+            text-align: center;
+            font-size: 15px;
+            font-weight: lighter;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-weight: bolder;
+            margin-left: 50px; 
+            margin-right: 300px; 
+        }
+
+        p {
+            margin: 50px; 
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="top">
+        <div>
+            <h1>Polio Diagnosis (1913)</h1>
+            <p>Frida Kahlo's encounter with polio at the age of six profoundly shaped her perception of herself and the world around her. Polio, a highly contagious viral infection, left her with a noticeable limp in her right leg, a constant reminder of her physical vulnerability. This early experience with illness and disability not only affected Kahlo's mobility but also had a profound psychological impact on her self-esteem and sense of identity. Growing up with a visible disability in a society that often stigmatized and marginalized those who were different, Kahlo struggled to find acceptance and belonging.</p>
+            <p>For Kahlo, polio was more than just a physical ailment; it was a defining aspect of her identity and a source of both pain and resilience. Throughout her life, Kahlo grappled with feelings of inadequacy and insecurity stemming from her disability, yet she also found strength and empowerment in embracing her unique perspective and lived experience. Her art became a means of reclaiming her body and asserting her agency, challenging societal norms and redefining beauty on her own terms.</p>
+            <p>In her self-portraits, Kahlo often depicted her physical disabilities with unflinching honesty, refusing to conceal or minimize her limp or other bodily imperfections. Instead, she used her art to confront and transcend the limitations imposed by her disability, transforming her pain into power and her vulnerability into strength. Through her bold and uncompromising self-representation, Kahlo challenged conventional notions of beauty and perfection, advocating for greater acceptance and understanding of difference.</p>
+            <p>In many ways, Kahlo's experience with polio laid the groundwork for her later artistic exploration of themes such as pain, resilience, and identity. It instilled in her a deep empathy for the marginalized and the oppressed, shaping her commitment to social justice and her advocacy for the rights of the disabled. Ultimately, Kahlo's encounter with polio not only informed her art but also fueled her determination to confront adversity with courage and creativity, leaving an indelible mark on the world of art and beyond.</p>
+        </div>
+    </div>
+
+    <div class="middle">
+        <a href="index.html"><h2>←</h2></a>
+    </div>
+
+    <div class="bottom">
+        <h4>Site by Qinzhi.</h4>
+    </div>
+</div>
+
+</body>
+</html>

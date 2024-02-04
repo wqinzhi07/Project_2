@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="image-container">
+        <img src="images/background_image.png" alt="background image" usemap="#image_map">
+        <div class="image-overlay">
+            <div class="image-container">
+                <a href="ear.html"><img src="images/ear.png" alt="ear" class="map-image" style="top: 400px; left: 707px;" width="150" height="200"></a>
+            </div>
+            <div class="image-container">
+                <a href="eye.html"><img src="images/eye.png" alt="eye" class="map-image" style="top: 350px; left: 880px;" width="160" height="140"></a>
+            </div>
+            <div class="image-container">
+                <a href="nose.html"><img src="images/nose.png" alt="nose" class="map-image" style="top: 396px; left: 1004px;" width="100" height="200"></a>
+            </div>
+            <div class="image-container">
+                <a href="mouth.html"><img src="images/mouth.png" alt="mouth" class="map-image" style="top: 570px; left: 970px;" width="140" height="100"></a>
+            </div>
+            <div class="image-container">
+                <a href="chest.html"><img src="images/chest.png" alt="chest" class="map-image" style="top: 850px; left: 1013px;" width="280" height="230"></a>
+            </div>
+
+            <h1>Polio Diagnosis (1913)</h1>
+            <h1>Bus Accident (1925)</h1>
+            <h1>Marriage to Diego Rivera (1929)</h1>
+            <h1>Exhibitions in the United States and Europe (1938-1939)</h1>
+            <h1>Divorce from Diego Rivera (1939)</h1>
+            <h1>Health Decline and Surgeries (1940s)</h1>
+            <h1>Solo Exhibition in Mexico (1953)</h1>
+            <h1>Death (1954)</h1>
+        </div>
+    </div>
+
+    <map name="image_map">
+        <!-- Remove the area tags -->
+    </map>
+
+    <script>
+        // Hide the original image map
+        document.querySelector('map').style.display = 'none';
+
+        // Hide the original href links
+        const areas = document.querySelectorAll('.hover-area');
+        areas.forEach(area => area.style.display = 'none');
+    </script>
+</body>
+</html>

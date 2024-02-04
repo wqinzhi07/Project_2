@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-rows: 6fr 1fr 0.5fr; /* Top part occupies more space */
+            grid-template-columns: 1fr;
+        }
+
+        .top {
+            background-color: rgb(52, 112, 22);
+            padding: 20px;
+            display: flex;
+            align-items: center; /* Center content vertically */
+        }
+
+        .middle {
+            background-color: rgb(218, 98, 0);
+            padding: 20px;
+        }
+
+        .bottom {
+            background-color: rgb(52, 112, 22);
+        }
+
+        h4 {
+            text-align: center;
+            font-size: 15px;
+            font-weight: lighter;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-weight: bolder;
+            margin-left: 50px; 
+            margin-right: 300px; 
+        }
+
+        p {
+            margin: 50px; 
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="top">
+        <img src="images/The Broken Column.webp" style="width:500px;height:auto;object-fit:cover;padding: 50px;"/>
+        <div>
+            <h1>"The Broken Column" (1944)</h1>
+            <p>This haunting self-portrait shows Kahlo standing in front of a broken column, with her body split open to reveal a crumbling column inside. Metal nails pierce her skin, symbolizing the physical pain she experienced as a result of her injuries from a bus accident. The painting conveys Kahlo's resilience and strength in the face of adversity, as well as her exploration of pain, suffering, and healing.</p>
+        </div>
+    </div>
+
+    <div class="middle">
+        <a href="index.html"><h2>←</h2></a>
+    </div>
+
+    <div class="bottom">
+        <h4>Site by Qinzhi.</h4>
+    </div>
+</div>
+
+</body>
+</html>

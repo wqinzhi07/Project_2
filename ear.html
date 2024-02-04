@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-rows: 6fr 1fr 0.5fr; /* Top part occupies more space */
+            grid-template-columns: 1fr;
+        }
+
+        .top {
+            background-color: rgb(52, 112, 22);
+            padding: 20px;
+            display: flex;
+            align-items: center; /* Center content vertically */
+        }
+
+        .middle {
+            background-color: rgb(218, 98, 0);
+            padding: 20px;
+        }
+
+        .bottom {
+            background-color: rgb(52, 112, 22);
+        }
+
+        h4 {
+            text-align: center;
+            font-size: 15px;
+            font-weight: lighter;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-weight: bolder;
+            margin-left: 50px; 
+            margin-right: 300px; 
+        }
+
+        p {
+            margin: 50px; 
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="top">
+        <img src="images/The_Two_Fridas OIL PAINTING.jpg" alt="The_Two_Fridas OIL PAINTING" style="width:500px;height:auto;object-fit:cover;padding: 50px;"/>
+        <div>
+            <h1> "The Two Fridas" (1939):</h1>
+            <p>In this powerful painting, Kahlo depicts two versions of herself sitting side by side, connected by intertwined blood vessels. One Frida wears a European-style dress, while the other wears traditional Tehuana attire. The painting explores Kahlo's dual heritage and identity, as well as her struggles with duality and self-acceptance. It reflects her embrace of Mexican culture and indigenous traditions, as well as her defiance of societal norms and expectations.</p>
+        </div>
+    </div>
+
+
+    <div class="middle">
+        <a href="index.html"><h2>←</h2></a>
+    </div>
+
+    <div class="bottom">
+        <h4>Site by Qinzhi.</h4>
+    </div>
+</div>
+
+</body>
+</html>

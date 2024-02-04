@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-rows: 8fr 1fr 0.5fr; /* Top part occupies more space */
+            grid-template-columns: 1fr;
+        }
+
+        .top {
+            background-color: rgb(52, 112, 22);
+            padding: 20px;
+            display: flex;
+            align-items: center; /* Center content vertically */
+        }
+
+        .middle {
+            background-color: rgb(218, 98, 0);
+            padding: 20px;
+        }
+
+        .bottom {
+            background-color: rgb(52, 112, 22);
+        }
+
+        h4 {
+            text-align: center;
+            font-size: 15px;
+            font-weight: lighter;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-weight: bolder;
+            margin-left: 50px; 
+            margin-right: 300px; 
+        }
+
+        p {
+            margin: 50px; 
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="top">
+        <div>
+            <h1>Exhibitions in the United States and Europe (1938-1939)</h1>
+            <p>Frida Kahlo's exhibitions in the United States and Europe marked a pivotal moment in her career, propelling her into the international spotlight and solidifying her reputation as one of the most innovative and influential artists of the 20th century. These exhibitions introduced Kahlo's unique artistic style and vision to a global audience, garnering widespread acclaim and recognition for her bold and uncompromising self-portraits.</p>
+            <p>In 1938, Kahlo's paintings were featured in a solo exhibition at the Julien Levy Gallery in New York City, marking her debut in the American art scene. The exhibition, titled "Frida Kahlo: Paintings," showcased a selection of Kahlo's most iconic works, including self-portraits, still lifes, and symbolic compositions. Audiences were captivated by Kahlo's raw emotion, vivid imagery, and unflinching honesty, which challenged conventional notions of beauty, femininity, and identity.</p>
+            <p>The following year, Kahlo's work crossed the Atlantic to Europe, where it was met with equal enthusiasm and acclaim. Her paintings were showcased in exhibitions in major cities such as Paris, Amsterdam, and London, attracting attention from art critics, collectors, and curators. Kahlo's bold use of color, symbolism, and autobiographical storytelling resonated deeply with European audiences, who were drawn to the authenticity and intimacy of her artistic vision.</p>
+            <p>These exhibitions not only showcased Kahlo's artistic talent but also positioned her as a cultural ambassador for Mexico and Mexicanidad – the celebration of Mexican culture and identity. Kahlo's incorporation of indigenous imagery, folklore, and symbolism in her paintings reflected her deep connection to her homeland and her commitment to preserving its rich cultural heritage. Her embrace of traditional Mexican dress and adornments further emphasized her cultural pride and defiance of Western norms and conventions.</p>
+            <p>Kahlo's exhibitions in the United States and Europe also served as a platform for her to engage with broader political and social issues, including feminism, indigenous rights, and anti-fascism. Through her art, Kahlo challenged patriarchal norms and advocated for gender equality, depicting herself as a strong and empowered woman who defied societal expectations and embraced her own agency.</p>
+            <p>Ultimately, Kahlo's exhibitions in the United States and Europe were a testament to the universal appeal and enduring relevance of her art, which continues to resonate with audiences around the world. By sharing her personal struggles, triumphs, and dreams through her paintings, Kahlo transcended cultural and geographical boundaries, leaving an indelible mark on the history of art and inspiring generations of artists and activists to come.</p>
+        </div>
+    </div>
+
+    <div class="middle">
+        <a href="index.html"><h2>←</h2></a>
+    </div>
+
+    <div class="bottom">
+        <h4>Site by Qinzhi.</h4>
+    </div>
+</div>
+
+</body>
+</html>
