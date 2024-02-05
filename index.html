@@ -35,6 +35,8 @@
         font-size: 35px;
         top: 850px; 
         left: 370px; 
+        filter: blur(5px);
+        transition: filter 0.5s ease;
     }
         .words2 {
         background-color: rgba(0, 0, 0, 0); 
@@ -42,6 +44,8 @@
         font-size: 35px;
         top: 650px; 
         left: 550px; 
+        filter: blur(5px);
+        transition: filter 0.5s ease;
         }
     
         .words3 {
@@ -50,6 +54,8 @@
         font-size: 35px;
         top: 400px; 
         left: 500px; 
+        filter: blur(5px);
+        transition: filter 0.5s ease;
         }
         
         .words4 {
@@ -58,6 +64,8 @@
         font-size: 35px;
         top: 70px; 
         left: 560px; 
+        filter: blur(5px);
+        transition: filter 0.5s ease;
         }
 
         .words5 {
@@ -66,6 +74,8 @@
         font-size: 35px;
         top: 150px; 
         left: 1250px; 
+        filter: blur(5px);
+        transition: filter 0.5s ease;
         }
 
         .words6 {
@@ -74,6 +84,8 @@
         font-size: 35px;
         top: 400px; 
         left: 1250px; 
+        filter: blur(5px);
+        transition: filter 0.5s ease;
         }
         
         .words7 {
@@ -82,6 +94,8 @@
         font-size: 35px;
         top: 600px; 
         left: 1250px; 
+        filter: blur(5px);
+        transition: filter 0.5s ease;
         }
         
         .words8 {
@@ -90,6 +104,8 @@
         font-size: 35px;
         top: 800px; 
         left: 1450px; 
+        filter: blur(5px);
+        transition: filter 0.5s ease;
         }
 
         .words h1:not(:hover) {
@@ -150,6 +166,10 @@
 
         .rotated{
             transform: rotate(360deg); /* Apply rotation */
+        }
+
+        .image-container:hover .words, .image-container:hover .words2, .image-container:hover .words3, .image-container:hover .words4, .image-container:hover .words5, .image-container:hover .words6, .image-container:hover .words7, .image-container:hover .words8 {
+            filter: none; /* Remove blur effect */
         }
 
     </style>
