@@ -12,7 +12,7 @@
 
         .grid-container {
             display: grid;
-            grid-template-rows: 8fr 1fr 0.5fr; /* Top part occupies more space */
+            grid-template-rows: 8fr 0fr 0.5fr; /* Top part occupies more space */
             grid-template-columns: 0.8fr 4fr; /* Add a left column */
         }
 
@@ -66,6 +66,7 @@
             font-weight: bolder;
             margin-left: 50px; 
             margin-right: 300px; 
+            text-decoration: underline;
         }
 
         p {
@@ -76,11 +77,10 @@
         .back-button {
             background-color: transparent;
             border: none;
-            color: rgb(52, 112, 22);
-            padding: 10px 20px;
-            border-radius: 5px;
+            color: rgb(0, 0, 0);
+            padding: 10px 0px;
             cursor: pointer;
-            position: absolute;
+            position: center;
             top: 20px;
             right: 20px;
             font-size: 20px;
@@ -92,12 +92,23 @@
         }
 
         .numbers {
-            font-size: 80px;
-            margin: 10px 0;
-            color: rgb(0, 0, 0);
-            transform: rotate(-90deg); /* Rotate the numbers vertically */
-            writing-mode: vertical-rl; /* Alternate method for vertical text */
-        }
+    font-size: 80px;
+    margin: 10px 0;
+    color: black;
+    transform: rotate(-90deg); 
+    writing-mode: vertical-rl; 
+}
+
+.numbers a {
+    color: inherit; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+.numbers a:hover {
+    color: rgb(52, 112, 22); 
+}
+
     </style>
 </head>
 <body>
@@ -126,15 +137,14 @@
             </div>
         </div>
 
-        <div class="middle">
-            <!-- Insert content here -->
-        </div>
 
         <div class="bottom">
             <h4>Site by Qinzhi.</h4>
         </div>
     </div>
 </div>
+
+
 
 </body>
 </html>
