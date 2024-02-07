@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Layout</title>
     <style>
-        a {
+         a {
             text-decoration: none;
             color: black;
         }
 
+        body {
+            margin: 0;
+        }
+
         .grid-container {
             display: grid;
-            grid-template-rows: 6fr 0.5fr 0.5fr; /* Top part occupies more space */
+            grid-template-rows: 6fr 0.7fr 0.5fr; /* Top part occupies more space */
             grid-template-columns: 1fr;
         }
 
         .top {
-            background-color: rgb(52, 112, 22);
+            background-color: rgb(255, 255, 255);
             padding: 20px;
             display: flex;
             align-items: center; /* Center content vertically */
@@ -38,16 +42,15 @@
             font-weight: lighter;
         }
 
-        h1 {
-            font-size: 50px;
-            font-weight: bolder;
-            margin-left: 50px; 
-            margin-right: 300px; 
-        }
-
         p {
             margin: 50px; 
             font-size: 20px;
+            line-height: 1;
+        }
+
+        em {
+            font-weight: bold;
+            font-style: normal;
         }
     </style>
 </head>
@@ -55,10 +58,14 @@
 
 <div class="grid-container">
     <div class="top">
-        <img src="images/self-portrait-with-necklace-of-thorns.jpg" alt="Self-Portrait with Thorn Necklace and Hummingbird" style="width:500px;height:auto;object-fit:cover;padding: 50px;"/>
+        <img src="images/self-portrait-with-necklace-of-thorns.jpg" alt="my-birth" style="width:30vw;height:auto;object-fit:cover;padding: 5vw;"/>
         <div>
-            <h1>"Self-Portrait with Thorn Necklace and Hummingbird" (1940)</h1>
-            <p>This iconic self-portrait depicts Kahlo wearing a thorn necklace with a hummingbird hovering near her neck. The thorns symbolize the pain and suffering she endured throughout her life, while the hummingbird represents vitality and resilience. The painting reflects Kahlo's exploration of her physical and emotional scars, as well as her connection to Mexican folk art and symbolism.</p>
+            <p><em>Title:</em> Self-Portrait with Thorn Necklace and Hummingbird</p>
+            <p><em>Artist:</em> Frida Kahlo (1907-1954)</p> 
+            <p><em>Year:</em> 1940</p>
+            <p><em>Medium:</em> Oil on canvas</p>
+            <p><em>Description:</em>
+                "Self-Portrait with Thorn Necklace and Hummingbird" is an iconic representation of Frida Kahlo, featuring her adorned with a thorn necklace and a hovering hummingbird near her neck. The thorns serve as symbols of the pain and suffering she endured throughout her tumultuous life, while the hummingbird embodies vitality and resilience in the face of adversity. Through this self-portrait, Kahlo delves into the exploration of her physical and emotional scars, offering viewers a glimpse into her inner world and struggles. Additionally, the painting demonstrates Kahlo's profound connection to Mexican folk art and symbolism, showcasing her cultural roots and artistic vision.</p>
         </div>
     </div>
 

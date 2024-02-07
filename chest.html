@@ -10,14 +10,18 @@
             color: black;
         }
 
+        body {
+            margin: 0;
+        }
+
         .grid-container {
             display: grid;
-            grid-template-rows: 6fr 1fr 0.5fr; /* Top part occupies more space */
+            grid-template-rows: 6fr 0.7fr 0.5fr; /* Top part occupies more space */
             grid-template-columns: 1fr;
         }
 
         .top {
-            background-color: rgb(52, 112, 22);
+            background-color: rgb(255, 255, 255);
             padding: 20px;
             display: flex;
             align-items: center; /* Center content vertically */
@@ -38,16 +42,15 @@
             font-weight: lighter;
         }
 
-        h1 {
-            font-size: 50px;
-            font-weight: bolder;
-            margin-left: 50px; 
-            margin-right: 300px; 
-        }
-
         p {
             margin: 50px; 
             font-size: 20px;
+            line-height: 1;
+        }
+
+        em {
+            font-weight: bold;
+            font-style: normal;
         }
     </style>
 </head>
@@ -55,10 +58,14 @@
 
 <div class="grid-container">
     <div class="top">
-        <img src="images/The Broken Column.webp" style="width:500px;height:auto;object-fit:cover;padding: 50px;"/>
+        <img src="images/The Broken Column.webp" alt="my-birth" style="width:30vw;height:auto;object-fit:cover;padding: 5vw;"/>
         <div>
-            <h1>"The Broken Column" (1944)</h1>
-            <p>This haunting self-portrait shows Kahlo standing in front of a broken column, with her body split open to reveal a crumbling column inside. Metal nails pierce her skin, symbolizing the physical pain she experienced as a result of her injuries from a bus accident. The painting conveys Kahlo's resilience and strength in the face of adversity, as well as her exploration of pain, suffering, and healing.</p>
+            <p><em>Title:</em> The Broken Column</p>
+            <p><em>Artist:</em> Frida Kahlo (1907-1954)</p> 
+            <p><em>Year:</em> 1944</p>
+            <p><em>Medium:</em> Oil on canvas</p>
+            <p><em>Description:</em>
+                "The Broken Column" is a haunting self-portrait that portrays Frida Kahlo standing in front of a shattered column, her body split open to reveal a crumbling column inside. Metal nails pierce her skin, symbolizing the physical pain she endured following a severe bus accident. Through this powerful imagery, Kahlo conveys not only the physical anguish she experienced but also her resilience and strength in the face of adversity. The painting serves as a poignant exploration of pain, suffering, and healing, inviting viewers to contemplate the profound emotional and physical struggles Kahlo confronted throughout her life.</p>
         </div>
     </div>
 

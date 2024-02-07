@@ -10,14 +10,18 @@
             color: black;
         }
 
+        body {
+            margin: 0;
+        }
+
         .grid-container {
             display: grid;
-            grid-template-rows: 6fr 1fr 0.5fr; /* Top part occupies more space */
+            grid-template-rows: 6fr 0.7fr 0.5fr; /* Top part occupies more space */
             grid-template-columns: 1fr;
         }
 
         .top {
-            background-color: rgb(52, 112, 22);
+            background-color: rgb(255, 255, 255);
             padding: 20px;
             display: flex;
             align-items: center; /* Center content vertically */
@@ -38,16 +42,15 @@
             font-weight: lighter;
         }
 
-        h1 {
-            font-size: 50px;
-            font-weight: bolder;
-            margin-left: 50px; 
-            margin-right: 300px; 
-        }
-
         p {
             margin: 50px; 
             font-size: 20px;
+            line-height: 1;
+        }
+
+        em {
+            font-weight: bold;
+            font-style: normal;
         }
     </style>
 </head>
@@ -55,13 +58,16 @@
 
 <div class="grid-container">
     <div class="top">
-        <img src="images/The_Two_Fridas OIL PAINTING.jpg" alt="The_Two_Fridas OIL PAINTING" style="width:500px;height:auto;object-fit:cover;padding: 50px;"/>
+        <img src="images/The_Two_Fridas OIL PAINTING.jpg" alt="my-birth" style="width:30vw;height:auto;object-fit:cover;padding: 5vw;"/>
         <div>
-            <h1> "The Two Fridas" (1939):</h1>
-            <p>In this powerful painting, Kahlo depicts two versions of herself sitting side by side, connected by intertwined blood vessels. One Frida wears a European-style dress, while the other wears traditional Tehuana attire. The painting explores Kahlo's dual heritage and identity, as well as her struggles with duality and self-acceptance. It reflects her embrace of Mexican culture and indigenous traditions, as well as her defiance of societal norms and expectations.</p>
+            <p><em>Title:</em> The Two Fridas</p>
+            <p><em>Artist:</em> Frida Kahlo (1907-1954)</p> 
+            <p><em>Year:</em> 1939</p>
+            <p><em>Medium:</em> Oil on canvas</p>
+            <p><em>Description:</em>
+                "The Two Fridas" is a compelling painting that features two distinct versions of Frida Kahlo seated side by side, connected by intertwined blood vessels. One Frida is dressed in a European-style garment, while the other adorns traditional Tehuana attire. Through this powerful imagery, Kahlo delves into her dual heritage and identity, grappling with themes of duality and self-acceptance. The painting serves as a reflection of Kahlo's embrace of Mexican culture and indigenous traditions, showcasing her defiance of societal norms and expectations. It invites viewers to contemplate the complexities of identity and the intertwining of personal and cultural influences in Kahlo's life and art.</p>
         </div>
     </div>
-
 
     <div class="middle">
         <a href="index.html"><h2>←</h2></a>
