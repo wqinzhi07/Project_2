@@ -5,111 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Map</title>
     <style>
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
         body {
             margin: 0;
             padding: 0;
         }
         .image-container {
-            position: relative;
+            position: absolute;
             display: inline-block;
             transform: 0.5 ease;
         }
         .image-container img {
             display: block;
             transform: 0.5 ease;
+            width: 100%;
+            height: 100%;
         }
-        .image-overlay {
+
+        .background-image {
             position: absolute;
             top: 0;
             left: 0;
-        }
-        .map-image {
-            position: absolute;
-            visibility: hidden;
-            transform: 0.5 ease;
-        }
-        .image-container:hover .map-image {
-            visibility: visible;
-            transform: 0.5 ease;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Ensure the background image is behind everything else */
         }
 
         .words {
         background-color: rgba(0, 0, 0, 0); 
         position: absolute; 
         font-size: 35px;
-        top: 850px; 
-        left: 370px; 
+        top: 600px; 
+        left: 200px; 
         filter: blur(8px);
-        transition: filter 0.5s ease;
+        transition: filter 0.8s ease;
     }
         .words2 {
         background-color: rgba(0, 0, 0, 0); 
         position: absolute; 
         font-size: 35px;
-        top: 650px; 
-        left: 490px; 
+        top: 450px; 
+        left: 300px; 
         filter: blur(8px);
-        transition: filter 0.5s ease;
+        transition: filter 0.8s ease;
         }
     
         .words3 {
         background-color: rgba(0, 0, 0, 0); 
         position: absolute; 
         font-size: 35px;
-        top: 400px; 
-        left: 500px; 
+        top: 300px; 
+        left: 340px; 
         filter: blur(8px);
-        transition: filter 0.5s ease;
+        transition: filter 0.8s ease;
         }
         
         .words4 {
         background-color: rgba(0, 0, 0, 0); 
         position: absolute; 
         font-size: 35px;
-        top: 70px; 
-        left: 530px; 
+        top: 0px; 
+        left: 250px; 
         filter: blur(8px);
-        transition: filter 0.5s ease;
+        transition: filter 0.8s ease;
         }
 
         .words5 {
         background-color: rgba(0, 0, 0, 0); 
         position: absolute; 
         font-size: 35px;
-        top: 150px; 
-        left: 1250px; 
+        top: 50px; 
+        left: 980px; 
         filter: blur(8px);
-        transition: filter 0.5s ease;
+        transition: filter 0.8s ease;
         }
 
         .words6 {
         background-color: rgba(0, 0, 0, 0); 
         position: absolute; 
         font-size: 35px;
-        top: 400px; 
-        left: 1250px; 
+        top: 300px; 
+        left: 950px; 
         filter: blur(8px);
-        transition: filter 0.5s ease;
+        transition: filter 0.8s ease;
         }
         
         .words7 {
             background-color: rgba(0, 0, 0, 0); 
         position: absolute; 
         font-size: 35px;
-        top: 600px; 
-        left: 1200px; 
-        filter: blur(8px);
-        transition: filter 0.5s ease;
+        top: 450px; 
+        left: 1050px; 
+        filter: blur(10px);
+        transition: filter 0.8s ease;
         }
         
         .words8 {
             background-color: rgba(0, 0, 0, 0); 
         position: absolute; 
         font-size: 35px;
-        top: 800px; 
-        left: 1430px; 
-        filter: blur(8px);
-        transition: filter 0.5s ease;
+        top: 600px; 
+        left: 1120px; 
+        filter: blur(10px);
+        transition: filter 0.8s ease;
         }
 
         .words h1:not(:hover) {
@@ -172,8 +174,59 @@
             transform: rotate(360deg); /* Apply rotation */
         }
 
+        .face-images {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .face-images img {
+            position: absolute;
+            width: 115px; /* Adjust the size of the flying images as needed */
+            height: auto; /* Maintain aspect ratio */
+            z-index: 1; /* Ensure the flying images are in front of the background */
+        }
+
+        .chest-images {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .chest-images img {
+            position: absolute;
+            width: 230px; /* Adjust the size of the flying images as needed */
+            height: auto; /* Maintain aspect ratio */
+            z-index: 1; /* Ensure the flying images are in front of the background */
+        }
+
+        .nose-images {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .nose-images img {
+            position: absolute;
+            width: 80px; /* Adjust the size of the flying images as needed */
+            height: auto; /* Maintain aspect ratio */
+            z-index: 1; /* Ensure the flying images are in front of the background */
+        }
+
         .image-container:hover .words, .image-container:hover .words2, .image-container:hover .words3, .image-container:hover .words4, .image-container:hover .words5, .image-container:hover .words6, .image-container:hover .words7, .image-container:hover .words8 {
             filter: none; /* Remove blur effect */
+        }
+
+        .image-hover1 img {
+        opacity: 0; /* Set initial opacity */
+        transition: opacity 0.2s ease; /* Add transition effect */
+        }
+
+        .image-hover1:hover img {
+        opacity: 1; /* Change opacity on hover */
         }
 
     </style>
@@ -181,46 +234,41 @@
 <body>
     <div class="image-container">
         <img src="images/background_image.png" alt="background image" usemap="#image_map">
-        <div class="image-overlay">
-            <div class="image-container">
-                <a href="ear.html"><img src="images/ear.png" alt="ear" class="map-image" style="top: 400px; left: 707px;" width="150" height="200"></a>
-            </div>
-            <div class="image-container">
-                <a href="eye.html"><img src="images/eye.png" alt="eye" class="map-image" style="top: 335px; left: 880px;" width="160" height="140"></a>
-            </div>
-            <div class="image-container">
-                <a href="nose.html"><img src="images/nose.png" alt="nose" class="map-image" style="top: 380px; left: 1004px;" width="100" height="200"></a>
-            </div>
-            <div class="image-container">
-                <a href="mouth.html"><img src="images/mouth.png" alt="mouth" class="map-image" style="top: 560px; left: 970px;" width="140" height="100"></a>
-            </div>
-            <div class="image-container">
-                <a href="chest.html"><img src="images/chest.png" alt="chest" class="map-image" style="top: 830px; left: 1013px;" width="280" height="230"></a>
-            </div>
+        <div class="face-images">
+            <a href="eye.html" class="image-hover1"><img src="images/eye.png" alt="face image 1" style="top: 275px; left: 680px;"></a>
+            <a href="ear.html" class="image-hover1"><img src="images/ear.png" alt="face image 2" style="top: 300px; left: 550px;"></a>
+            <a href="mouth.html" class="image-hover1"><img src="images/mouth.png" alt="face image 4" style="top: 445px; left: 740px;"></a>
+        </div>
+        <div class="nose-images">
+            <a href="nose.html" class="image-hover1"><img src="images/nose.png" alt="face image 3" style="top: 305px; left: 775px;"></a>
+        </div>
+        <div class="chest-images">
+            <a href="chest.html" class="image-hover1"><img src="images/chest.png" alt="face image 5" style="top: 635px; left: 730px;"></a>
+        </div>
             
             <div class="words">
-                <a href="1913.html"><h1>1913</h1></a></div>
+                <a href="1910.html"><h1>1913</h1></a></div>
 
             <div class="words2">
-                <a href="1925.html"><h1>1925</h1></a></div>
+                <a href="1910.html"><h1>1925</h1></a></div>
 
             <div class="words3">
-                <a href="1929.html"><h1>1929</h1></a></div>
+                <a href="1910.html"><h1>1929</h1></a></div>
             
             <div class="words4">
-                <a href="1938-1939.html"><h1>1938-1939</h1></a></div>
+                <a href="1910.html"><h1>1938-1939</h1></a></div>
             
             <div class="words5">
-                <a href="1939.html"><h1>1939</h1></a></div>
+                <a href="1910.html"><h1>1939</h1></a></div>
 
             <div class="words6">
-                <a href="1940.html"><h1>1940</h1></a></div>
+                <a href="1910.html"><h1>1940</h1></a></div>
             
             <div class="words7">
-                <a href="1953.html"><h1>1953</h1></a></div>
+                <a href="1910.html"><h1>1953</h1></a></div>
 
             <div class="words8">
-                <a href="1954.html"><h1>1954</h1></a></div>
+                <a href="1910.html"><h1>1954</h1></a></div>
 
         </div>
     </div>
@@ -229,33 +277,33 @@
     </map>
 
     <script>
-        // Function to handle scroll event
-        function handleScroll() {
-            const scrollTop = window.scrollY; // Get the vertical scroll position
-            const scrollLeft = window.scrollX; // Get the horizontal scroll position
-            const words = document.querySelectorAll('.words, .words2, .words3, .words4, .words5, .words6, .words7, .words8'); // Select all elements with the class .words or other classes
+        const words = document.querySelectorAll('.words, .words2, .words3, .words4, .words5, .words6, .words7, .words8');
 
-            // Loop through each .words element
+        document.addEventListener('mousemove', (e) => {
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+
             words.forEach(word => {
-                // Calculate the rotation angle based on the vertical scroll position
-                // You can adjust this calculation as needed
-                const rotationAngleY = scrollTop / 5;
+                const wordRect = word.getBoundingClientRect();
+                const wordCenterX = wordRect.left + wordRect.width / 2;
+                const wordCenterY = wordRect.top + wordRect.height / 2;
 
-                // Calculate the rotation angle based on the horizontal scroll position
-                // You can adjust this calculation as needed
-                const rotationAngleX = scrollLeft / 5;
+                const deltaX = mouseX - wordCenterX;
+                const deltaY = mouseY - wordCenterY;
 
-                // Apply the rotation using the CSS class .rotated
-                word.classList.add('rotated');
-                word.style.transform = `rotateX(${rotationAngleX}deg) rotateY(${rotationAngleY}deg)`;
+                const angle = Math.atan2(deltaY, deltaX);
+                const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+
+                const maxDistance = 20; // Adjust this value for the maximum distance you want the words to move
+
+                const moveX = Math.cos(angle) * Math.min(distance, maxDistance);
+                const moveY = Math.sin(angle) * Math.min(distance, maxDistance);
+
+                word.style.transform = `translate(${moveX}px, ${moveY}px) rotate(${angle}rad)`;
             });
-        }
+        });
 
-        // Attach the handleScroll function to the scroll event
-        window.addEventListener('scroll', handleScroll);
     </script>
-
-
 
 </body>
 </html>

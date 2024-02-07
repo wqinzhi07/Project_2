@@ -1,7 +1,0 @@
-body {
-    margin: 0;
-    display: grid;
-    grid-template-columns: 0fr 1fr 0fr; /* Adjusted column template */
-    grid-template-rows: 1fr auto; /* Adjusted row template */
-    height: 100vh;
-}

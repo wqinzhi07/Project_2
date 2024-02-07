@@ -7,20 +7,17 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
         }
 
         .grid-container {
             display: grid;
-            grid-template-rows: 8fr 0fr 0.5fr; /* Top part occupies more space */
-            grid-template-columns: 0.8fr 4fr; /* Add a left column */
+            grid-template-rows: 8fr; /* Top part occupies more space */
+            grid-template-columns: 0.7fr 4fr; /* Add a left column */
         }
 
         .left {
             background-color: rgb(218, 98, 0); /* Background color of left column */
-            padding: 20px;
-            height: calc(100vh - 40px); /* Take up the full height of the viewport minus padding */
-            position: relative; /* Position relative for absolute positioning of button */
+            height: calc(110vh - 40px); /* Take up the full height of the viewport minus padding */
             overflow-y: auto; /* Enable vertical scrolling */
             scrollbar-width: none; /* Hide the scrollbar in Firefox */
             -ms-overflow-style: none; /* Hide the scrollbar in Internet Explorer */
@@ -35,19 +32,7 @@
             padding: 20px;
             display: flex;
             align-items: center; /* Center content vertically */
-        }
-
-        .middle {
-            background-color: rgb(218, 98, 0);
-            padding: 10px;
-            overflow-y: auto; /* Enable vertical scrolling */
-            scrollbar-width: none; /* Hide the scrollbar in Firefox */
-            -ms-overflow-style: none; /* Hide the scrollbar in Internet Explorer */
-            max-height: calc(100vh - 120px); /* Adjust height for scrollbar */
-        }
-
-        .middle::-webkit-scrollbar {
-            display: none; /* Hide the scrollbar in WebKit browsers */
+            height: 100vh; /* Take up the full height of the viewport */
         }
 
         .bottom {
@@ -70,7 +55,8 @@
         }
 
         p {
-            margin: 50px; 
+            margin-left: 200px; 
+            margin-right: 200px;
             font-size: 20px;
         }
 
@@ -80,7 +66,7 @@
             color: rgb(0, 0, 0);
             padding: 10px 0px;
             cursor: pointer;
-            position: center;
+            position: fixed;
             top: 20px;
             right: 20px;
             font-size: 20px;
@@ -88,7 +74,7 @@
         }
 
         .back-button:hover {
-            background-color: rgba(52, 112, 22, 0.5);
+            background-color: rgb(218, 98, 0)
         }
 
         .numbers {
@@ -137,14 +123,7 @@
             </div>
         </div>
 
-
-        <div class="bottom">
-            <h4>Site by Qinzhi.</h4>
-        </div>
-    </div>
 </div>
-
-
 
 </body>
 </html>
